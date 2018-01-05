@@ -80,7 +80,7 @@ func (t *SimpleChaincode) Invoke(stub shim.ChaincodeStubInterface) pb.Response {
 		return t.getCustomerBalance(stub, args)
 	}
 
-	return shim.Error("Invalid invoke function name. Expecting \"transfer\" \"delete\" \"getCustomerBalance\")
+	return shim.Error("Invalid invoke function name. Expecting \"transfer\" \"delete\" \"getCustomerBalance\"")
 }
 
 // Transaction makes payment of X units from A to B
